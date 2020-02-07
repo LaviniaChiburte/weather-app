@@ -1,0 +1,98 @@
+body {
+  background-color: rgb(245, 215, 219);
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: content-box;
+}
+.header {
+  background-color: rgb(245, 215, 219);
+  text-align: center, justify;
+  display: inline-block;
+  width: auto;
+  padding: 10 px;
+  margin: 20 20;
+}
+
+.box-weather-now {
+  background-color: white;
+  border-radius: 5px;
+  width: 30vw;
+}
+
+.box-future-weather {
+}
+
+#harta {
+  height: 20rem;
+  width: 20rem;
+  display: block;
+  /* margin-left: 500px;
+  margin-top: -120px; */
+}
+
+h4 {
+  text-align: left;
+  padding: 15px;
+}
+
+#text-box {
+  background-color: lightgrey;
+  padding: 5px;
+  border: 2px solid rgb(207, 207, 255);
+  border-radius: 5px;
+}
+
+.buton {
+  background-color: grey;
+  border: 2px solid rgb(207, 207, 255);
+  padding: 5px;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 15px;
+  padding-left: -50 px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+
+.prognoza {
+  min-width: 0;
+  display: flex;
+}
+
+#ziua {
+  min-width: 0;
+  min-height: 0;
+  font-size: 12px solid black;
+  /* background-color: rgb(255, 240, 244); */
+
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#cutiiprognoza {
+  font-size: 10px;
+}
+
+.section-weather-now {
+  display: flex;
+  align-content: flex-start;
+  justify-content: space-between;
+  margin: 5vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-between;
+}

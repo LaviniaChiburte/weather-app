@@ -1,0 +1,94 @@
+<DOCTYPE! html>
+  <html>
+    <head>
+      <title>Page Title</title>
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous"
+      />
+      <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+      <script src="script.js"></script>
+
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiuyI9RGABnT-JEa8UnVInvoqOi7xj3IU&callback=getVremea"></script>
+    </head>
+
+    <body>
+      <header class="header">
+        <input type="text" id="text-box" placeholder="City..." />
+        <input
+          type="button"
+          class="btn btn-dark"
+          onclick="getVremea()"
+          value="Current weather"
+        />
+        <input
+          type="button"
+          class="btn btn-dark"
+          onclick="getPrognoza()"
+          value="Forcasts"
+        />
+      </header>
+
+      <main class="container-lg" class="main">
+        <section class="container-md section-weather-now">
+          <article class="box-weather-now card">
+            <h4>Current weather in your city</h4>
+            <table>
+              <tr>
+                <td width="30%">
+                  <ul class="items">
+                    <li><img src="" id="icoana" /></li>
+                    <li><span id="descriere"></span></li>
+                    <li>Humidity: <span id="umiditate"></span></li>
+                    <li>Pressure: <span id="presiune"></span></li>
+                    <li>Current Temperature: <span id="temperatura"></span></li>
+                    <li>Maximum Temp: <span id="maxima"></span></li>
+                    <li>Minimum Temp: <span id="minima"></span></li>
+                  </ul>
+                </td>
+                <td width="70%"></td>
+              </tr>
+            </table>
+          </article>
+          <article id="harta"></article>
+        </section>
+
+        <section class="box-future-weather container-sm ">
+          <h4>Forcasts for 6 days</h4>
+
+          <table class="prognoza">
+            <tr id="ziua">
+              <td>
+                <span id="ziua_1"></span>
+              </td>
+              <td>
+                <span id="ziua_2"></span>
+              </td>
+              <td>
+                <span id="ziua_3"></span>
+              </td>
+              <td>
+                <span id="ziua_4"></span>
+              </td>
+              <td>
+                <span id="ziua_5"></span>
+              </td>
+              <td>
+                <span id="ziua_6"></span>
+              </td>
+            </tr>
+            <tr id="cutiiPrognoza">
+              <td id="ziua1-ora1"></td>
+              <td id="ziua2-ora1"></td>
+              <td id="ziua3-ora1"></td>
+              <td id="ziua4-ora1"></td>
+              <td id="ziua5-ora1"></td>
+              <td id="ziua6-ora1"></td>
+            </tr>
+          </table>
+        </section>
+      </main>
+    </body></html
+></DOCTYPE!>
